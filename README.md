@@ -1,2 +1,1 @@
-# expressvpn-python
-ExpressVPN - Python Wrapper
+# ExpressVPN - Python Wrapper (LINUX)
