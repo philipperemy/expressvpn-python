@@ -1,7 +1,7 @@
 import random
 import subprocess
 
-from commands import *
+from expressvpn.commands import *
 
 
 class ConnectException(Exception):
