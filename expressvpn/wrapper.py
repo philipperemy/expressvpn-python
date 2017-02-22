@@ -3,8 +3,6 @@ import subprocess
 
 from commands import *
 
-VALID_LOCATIONS = ['Japan', 'Hong Kong', 'USA', 'Canada', 'Australia', 'UK']
-
 
 class ConnectException(Exception):
     pass
