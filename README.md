@@ -34,13 +34,14 @@ NOTE that you will have to activate `expressvpn` again if you logout.
 
 ```
 expressvpn connect
+```
+Binding is `connect()`.
+```
 expressvpn connect [ALIAS]
 ```
-
-```
-expressvpn list
-```
+Binding is `connect_alias(alias)`.
 
 ```
 expressvpn disconnect
 ```
+Binding is `disconnect()`.
