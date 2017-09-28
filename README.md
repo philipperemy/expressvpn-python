@@ -22,8 +22,8 @@ sudo pip install . # will install it as a package
 You can find your activation key here: [https://www.expressvpn.com/setup](https://www.expressvpn.com/setup).
 
 ```
-expressvpn preferences set send_diagnostics false
 expressvpn activate # paste your activate key and press ENTER.
+expressvpn preferences set send_diagnostics false
 ```
 
 To logout, simply run:
