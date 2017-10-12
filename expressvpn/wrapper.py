@@ -73,7 +73,7 @@ def extract_aliases(vpn_list):
 
 
 def random_connect():
-    activation_check()
+    # activation_check()
     disconnect()
     vpn_list = run_command(VPN_LIST)[0:46] # we use only US, UK, HK and JP VPN. Fastest ones!
     print_output(vpn_list)
