@@ -49,3 +49,45 @@ Binding is `connect_alias(alias)`.
 expressvpn disconnect
 ```
 Binding is `disconnect()`.
+
+## IP auto switching
+
+Sometimes websites like Amazon or Google ban you after too many requests. It's easily detectable because your script fails for some obscure reason. Most of the time, if the HTML contains the word captcha or if the websites returns 403, it means that you have probably banned been for a while. Don't panick, you can use a VPN coupled with an IP auto switching procedure to overcome this difficulty. I provide below an example of a scraper doing IP auto switching:
+
+```
+from expressvpn import wrapper
+import logging
+
+def main():
+    while True:
+        try:
+            scrape()
+        except BannedException as be:
+            logging.info('BANNED EXCEPTION in __MAIN__')
+            logging.info(be)
+            logging.info('Lets change our PUBLIC IP GUYS!')
+            change_ip()
+        except Exception as e:
+            logging.error('Exception raised.')
+            logging.error(e)
+
+
+def change_ip():
+    max_attempts = 10
+    attempts = 0
+    while True:
+        attempts += 1
+        try:
+            logging.info('GETTING NEW IP')
+            wrapper.random_connect()
+            logging.info('SUCCESS')
+            return
+        except Exception as e:
+            if attempts > max_attempts:
+                logging.error('Max attempts reached for VPN. Check its configuration.')
+                logging.error('Browse https://github.com/philipperemy/expressvpn-python.')
+                logging.error('Program will exit.')
+                exit(1)
+            logging.error(e)
+            logging.error('Skipping exception.')
+ ```
