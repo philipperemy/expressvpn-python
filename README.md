@@ -52,7 +52,7 @@ Binding is `disconnect()`.
 
 ## IP auto switching
 
-Sometimes websites like Amazon or Google ban you after too many requests. It's easily detectable because your script fails for some obscure reason. Most of the time, if the HTML contains the word captcha or if the websites returns 403, it means that you have probably banned been for a while. Don't panick, you can use a VPN coupled with an IP auto switching procedure to overcome this difficulty. I provide below an example of a scraper doing IP auto switching:
+Sometimes websites like Amazon or Google will ban you after too many requests. It's easy to detect because your script will fail for some obscure reason. Most of the time, if the HTML contains the word captcha or if the websites returns 403, it means that you probably got banned. But don't panic, you can use a VPN coupled with IP auto switching. Here's an example of a scraper doing IP auto switching:
 
 ```
 from expressvpn import wrapper
