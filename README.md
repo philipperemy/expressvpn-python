@@ -10,7 +10,7 @@ Full bash documentation: [https://www.expressvpn.com/support/vpn-setup/app-for-l
 
 The package DEB for Ubuntu 64bits 1.2.0 is already part of the repository. For the other OS, please refer to:
 [https://www.expressvpn.com/support/vpn-setup/app-for-linux/#download](https://www.expressvpn.com/support/vpn-setup/app-for-linux/#download)
-```
+```bash
 git clone git@github.com:philipperemy/expressvpn-python.git evpn
 cd evpn
 sudo dpkg -i expressvpn_1.2.0_amd64.deb # will install the binaries provided by ExpressVPN
@@ -21,14 +21,14 @@ sudo pip install . # will install it as a package
 
 You can find your activation key here: [https://www.expressvpn.com/setup](https://www.expressvpn.com/setup).
 
-```
+```bash
 expressvpn activate # paste your activate key and press ENTER.
 expressvpn preferences set send_diagnostics false
 ```
 
 To logout, simply run:
 
-```
+```bash
 expressvpn logout
 ```
 
@@ -36,16 +36,16 @@ NOTE that you will have to activate `expressvpn` again if you logout.
 
 ## Python bindings
 
-```
+```bash
 expressvpn connect
 ```
 Binding is `connect()`.
-```
+```bash
 expressvpn connect [ALIAS]
 ```
 Binding is `connect_alias(alias)`.
 
-```
+```bash
 expressvpn disconnect
 ```
 Binding is `disconnect()`.
@@ -54,7 +54,7 @@ Binding is `disconnect()`.
 
 Sometimes websites like Amazon or Google will ban you after too many requests. It's easy to detect because your script will fail for some obscure reason. Most of the time, if the HTML contains the word captcha or if the websites returns 403, it means that you probably got banned. But don't panic, you can use a VPN coupled with IP auto switching. Here's an example of a scraper doing IP auto switching:
 
-```
+```python
 from expressvpn import wrapper
 import logging
 
