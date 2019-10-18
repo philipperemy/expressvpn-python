@@ -7,5 +7,5 @@ setup(
     url='https://github.com/philipperemy/expressvpn-python',
     license='MIT',
     author='Philippe Remy',
-    author_email='premy@reactive.co.jp',
+    author_email='premy.enseirb@gmail.com',
     description='ExpressVPN - Python Wrapper')
