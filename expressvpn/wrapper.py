@@ -60,6 +60,13 @@ def connect_alias(alias):
 
 
 def extract_aliases(vpn_list):
+    try:
+        return extract_aliases_1(vpn_list)
+    except:
+        return extract_aliases_2(vpn_list)
+
+
+def extract_aliases_1(vpn_list):
     """
     - ALIAS COUNTRY     LOCATION   RECOMMENDED
     - ----- ---------------    ------------------------------ -----------
@@ -68,14 +75,29 @@ def extract_aliases(vpn_list):
     for vpn_item in vpn_list[2:]:
         alias = vpn_item.split()[0]
         aliases.append(alias)
-        # print('Found alias -> {}'.format(alias))
+    return aliases
+
+
+def extract_aliases_2(vpn_list):
+    """
+    Recommended locations:
+    - ALIAS COUNTRY     LOCATION   RECOMMENDED
+    - ----- ---------------    ------------------------------ -----------
+    """
+    aliases = []
+    for vpn_item in vpn_list[3:]:
+        try:
+            alias = vpn_item.split()[0]
+            aliases.append(alias)
+        except IndexError:
+            return aliases
     return aliases
 
 
 def random_connect():
     # activation_check()
     disconnect()
-    vpn_list = run_command(VPN_LIST)[0:46] # we use only US, UK, HK and JP VPN. Fastest ones!
+    vpn_list = run_command(VPN_LIST)[0:46]  # we use only US, UK, HK and JP VPN. Fastest ones!
     print_output(vpn_list)
     aliases = extract_aliases(vpn_list)
     random.shuffle(aliases)
