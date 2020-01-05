@@ -1,20 +1,21 @@
 # ExpressVPN - Python Wrapper (LINUX)
 
+Full bash documentation: [https://www.expressvpn.com/support/vpn-setup/app-for-linux/](https://www.expressvpn.com/support/vpn-setup/app-for-linux/)
+
 <div align="center">
   <img src="https://smhttp-ssl-23575.nexcesscdn.net/80ABE1/sflashrouters/media/catalog/category/expressvpn-700px2.png" width="300"><br><br>
 </div>
 
-Full bash documentation: [https://www.expressvpn.com/support/vpn-setup/app-for-linux/](https://www.expressvpn.com/support/vpn-setup/app-for-linux/)
 
 ## Download/Install the package on the official website
 
 The package DEB for Ubuntu 64bits 2.3.4 is already part of the repository. For another OS, please refer to:
 [https://www.expressvpn.com/support/vpn-setup/app-for-linux/#download](https://www.expressvpn.com/support/vpn-setup/app-for-linux/#download)
+
 ```bash
-git clone git@github.com:philipperemy/expressvpn-python.git evpn
-cd evpn
+git clone git@github.com:philipperemy/expressvpn-python.git evpn && cd evpn
 sudo dpkg -i expressvpn_2.3.4-1_amd64.deb # will install the binaries provided by ExpressVPN
-sudo pip install . # will install it as a package
+sudo pip install . # will install it as a package. Or install it within a virtualenv (better option).
 ```
 
 ## Set up expressvpn
@@ -26,7 +27,7 @@ expressvpn activate # paste your activate key and press ENTER.
 expressvpn preferences set send_diagnostics false
 ```
 
-To logout, simply run:
+After login and to logout, simply run:
 
 ```bash
 expressvpn logout
@@ -43,7 +44,7 @@ Binding is `connect()`.
 ```bash
 expressvpn connect [ALIAS]
 ```
-Binding is `connect_alias(alias)`.
+Binding is `connect_alias(alias: str)`.
 
 ```bash
 expressvpn disconnect
