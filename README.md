@@ -6,7 +6,7 @@
 
 Full bash documentation: [https://www.expressvpn.com/support/vpn-setup/app-for-linux/](https://www.expressvpn.com/support/vpn-setup/app-for-linux/)
 
-## Download the package on the official website
+## Download/Install the package on the official website
 
 The package DEB for Ubuntu 64bits 2.3.4 is already part of the repository. For another OS, please refer to:
 [https://www.expressvpn.com/support/vpn-setup/app-for-linux/#download](https://www.expressvpn.com/support/vpn-setup/app-for-linux/#download)
