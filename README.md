@@ -8,12 +8,12 @@ Full bash documentation: [https://www.expressvpn.com/support/vpn-setup/app-for-l
 
 ## Download the package on the official website
 
-The package DEB for Ubuntu 64bits 1.2.0 is already part of the repository. For the other OS, please refer to:
+The package DEB for Ubuntu 64bits 2.3.4 is already part of the repository. For another OS, please refer to:
 [https://www.expressvpn.com/support/vpn-setup/app-for-linux/#download](https://www.expressvpn.com/support/vpn-setup/app-for-linux/#download)
 ```bash
 git clone git@github.com:philipperemy/expressvpn-python.git evpn
 cd evpn
-sudo dpkg -i expressvpn_1.2.0_amd64.deb # will install the binaries provided by ExpressVPN
+sudo dpkg -i expressvpn_2.3.4-1_amd64.deb # will install the binaries provided by ExpressVPN
 sudo pip install . # will install it as a package
 ```
 
