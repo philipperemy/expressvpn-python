@@ -104,7 +104,3 @@ def random_connect():
     selected_alias = aliases[0]
     print('Selected alias : {}'.format(selected_alias))
     connect_alias(selected_alias)  # might raise a ConnectException.
-
-
-if __name__ == '__main__':
-    random_connect()
