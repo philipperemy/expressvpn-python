@@ -44,19 +44,38 @@ NOTE that you will have to activate `expressvpn` again if you logout.
 
 ## Python bindings
 
+### Connect
+
 ```bash
 expressvpn connect
 ```
-Binding is `connect()`.
+
+```python
+from expressvpn import connect
+connect()
+```
+
+### Connect with alias
+
 ```bash
 expressvpn connect [ALIAS]
 ```
-Binding is `connect_alias(alias: str)`.
+
+```python
+from expressvpn import connect_alias
+connect_alias(alias: str)
+```
+
+### Disconnect
 
 ```bash
 expressvpn disconnect
 ```
-Binding is `disconnect()`.
+
+```python
+from expressvpn import disconnect
+disconnect()
+```
 
 ## IP auto switching
 
