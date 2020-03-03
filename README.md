@@ -46,10 +46,12 @@ NOTE that you will have to activate `expressvpn` again if you logout.
 
 ### Connect
 
+Bash
 ```bash
 expressvpn connect
 ```
 
+Python
 ```python
 from expressvpn import connect
 connect()
@@ -57,10 +59,12 @@ connect()
 
 ### Connect with alias
 
+Bash
 ```bash
 expressvpn connect [ALIAS]
 ```
 
+Python
 ```python
 from expressvpn import connect_alias
 connect_alias(alias: str)
@@ -68,10 +72,12 @@ connect_alias(alias: str)
 
 ### Disconnect
 
+Bash
 ```bash
 expressvpn disconnect
 ```
 
+Python
 ```python
 from expressvpn import disconnect
 disconnect()
