@@ -70,6 +70,14 @@ from expressvpn import connect_alias
 connect_alias(alias: str)
 ```
 
+### Random connect
+
+Python
+```
+from expressvpn.wrapper import random_connect
+random_connect()
+```
+
 ### Disconnect
 
 Bash
