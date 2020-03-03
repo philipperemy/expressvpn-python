@@ -6,6 +6,13 @@ Full bash documentation: [https://www.expressvpn.com/support/vpn-setup/app-for-l
   <img src="https://smhttp-ssl-23575.nexcesscdn.net/80ABE1/sflashrouters/media/catalog/category/expressvpn-700px2.png" width="300"><br><br>
 </div>
 
+## Installation with PyPI
+
+If the command `expressvpn` is already installed on your Ubuntu then just run this:
+
+```
+pip install expressvpn-python
+```
 
 ## Download/Install the package on the official website
 
