@@ -2,9 +2,8 @@
 
 Full bash documentation: [https://www.expressvpn.com/support/vpn-setup/app-for-linux/](https://www.expressvpn.com/support/vpn-setup/app-for-linux/)
 
-<div align="center">
-  <img src="https://smhttp-ssl-23575.nexcesscdn.net/80ABE1/sflashrouters/media/catalog/category/expressvpn-700px2.png" width="300"><br><br>
-</div>
+This will not work on Windows!
+
 
 ## Installation with PyPI
 
