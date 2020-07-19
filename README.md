@@ -13,10 +13,6 @@ If the command `expressvpn` is already installed on your Ubuntu then just run th
 pip install expressvpn-python
 ```
 
-## Change of public IP every x seconds
-
-Check the script: `vpn.sh`
-
 ## Download/Install the package on the official website
 
 The package DEB for Ubuntu 64bits 2.3.4 is already part of the repository. For another OS, please refer to:
@@ -27,6 +23,10 @@ git clone git@github.com:philipperemy/expressvpn-python.git evpn && cd evpn
 sudo dpkg -i expressvpn_2.3.4-1_amd64.deb # will install the binaries provided by ExpressVPN
 sudo pip install . # will install it as a package. Or install it within a virtualenv (better option).
 ```
+
+## Change your public IP every x seconds
+
+Check the script: `vpn.sh`
 
 ## Set up expressvpn
 
