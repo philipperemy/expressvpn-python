@@ -9,7 +9,7 @@ This will not work on Windows!
 
 If the command `expressvpn` is already installed on your Ubuntu then just run this:
 
-```
+```bash
 pip install expressvpn-python
 ```
 
@@ -76,7 +76,7 @@ connect_alias(alias: str)
 ### Random connect
 
 Python
-```
+```python
 from expressvpn.wrapper import random_connect
 random_connect()
 ```
