@@ -99,8 +99,14 @@ disconnect()
 Sometimes websites like Amazon or Google will ban you after too many requests. It's easy to detect because your script will fail for some obscure reason. Most of the time, if the HTML contains the word captcha or if the websites returns 403, it means that you probably got banned. But don't panic, you can use a VPN coupled with IP auto switching. Here's an example of a scraper doing IP auto switching:
 
 ```python
-from expressvpn import wrapper
 import logging
+
+from expressvpn import wrapper
+
+
+class BannedException(Exception):
+    pass
+
 
 def main():
     while True:
