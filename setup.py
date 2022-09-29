@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='expressvpn-python',
-    version='1.1',
+    version='1.2',
     packages=['expressvpn'],
     url='https://github.com/philipperemy/expressvpn-python',
     license='MIT',
