@@ -73,15 +73,21 @@ from expressvpn import connect_alias
 connect_alias(alias: str)
 ```
 
-### Random connect
-
+### Random connect(From fastest servers)
 Python
 ```python
 from expressvpn.wrapper import random_connect
-random_connect() #random from fastest
-# or random from all locations
-#random_connect(True)
+random_connect()
 ```
+
+### Random connect(From all servers)
+Python
+```python
+from expressvpn.wrapper import random_connect
+random_connect(True)
+```
+
+###
 
 ### Disconnect
 
