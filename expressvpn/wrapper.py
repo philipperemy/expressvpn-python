@@ -94,10 +94,10 @@ def extract_aliases_2(vpn_list):
     return aliases
 
 
-def random_connect():
+def random_connect(useAllLocations = False):
     # activation_check()
     disconnect()
-    vpn_list = run_command(VPN_LIST)[0:46]  # we use only US, UK, HK and JP VPN. Fastest ones!
+    vpn_list = run_command(VPN_LIST_ALL) if useAllLocations else run_command(VPN_LIST)[0:46]
     print_output(vpn_list)
     aliases = extract_aliases(vpn_list)
     random.shuffle(aliases)
