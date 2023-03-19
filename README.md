@@ -1,5 +1,8 @@
 # ExpressVPN - Python Wrapper (LINUX)
 
+[![Downloads](https://static.pepy.tech/badge/expressvpn-python)](https://pepy.tech/project/expressvpn-python)
+[![Downloads](https://static.pepy.tech/badge/expressvpn-python/month)](https://pepy.tech/project/expressvpn-python)
+
 Full bash documentation: [https://www.expressvpn.com/support/vpn-setup/app-for-linux/](https://www.expressvpn.com/support/vpn-setup/app-for-linux/)
 
 This will not work on Windows!
