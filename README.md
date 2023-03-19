@@ -29,7 +29,7 @@ sudo pip install . # will install it as a package. Or install it within a virtua
 
 ## Change your public IP every x seconds
 
-Check the script: `vpn.sh`
+Check the script: [vpn.sh](vpn.sh).
 
 ## Set up expressvpn
 
